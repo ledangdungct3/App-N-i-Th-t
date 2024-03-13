@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/hong"
+    android:padding="10dp"
+    tools:context=".Activities.activities.fragment.DonHangFragment">
+
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           app:layout_constraintTop_toTopOf="parent"
+           android:id="@+id/layout"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:text="@string/giamgia"
+               android:textStyle="bold"
+               android:textColor="#423F3F"
+               android:textSize="26dp"
+               android:gravity="center"
+               android:layout_weight="4"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+           <View
+               android:layout_marginTop="10dp"
+               android:background="@color/chu"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+              />
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/donhang_recy"
+               android:layout_marginStart="15dp"
+               android:layout_marginBottom="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/donhang_recy2"
+               android:layout_marginStart="15dp"
+               android:layout_marginBottom="7dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="100dp"/>
+       </LinearLayout>
+
+   </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

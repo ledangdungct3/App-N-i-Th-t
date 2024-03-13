@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/huydonhang"
+        android:id="@+id/menu_huydon"
+        android:icon="@drawable/ic_addnew"
+        />
+    <item android:title="@string/yeuthich"
+        android:id="@+id/menu_yeuthich2"
+        android:icon="@drawable/ic_favorite"
+        />
+</menu>

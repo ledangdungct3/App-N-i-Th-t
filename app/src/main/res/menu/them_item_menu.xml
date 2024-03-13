@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+       <item android:title="@string/tttk">
+            <menu>
+                <item android:title="@string/tttk"
+                    android:icon="@drawable/ic_them_person"
+                    android:id="@+id/menu_tttk"
+                    />
+                <item android:title="@string/admin"
+                    android:icon="@drawable/ic_admin"
+                    android:id="@+id/menu_adim"
+                    />
+                <item android:title="@string/dsyt"
+                    android:icon="@drawable/ic_them_favo"
+                    android:id="@+id/menu_dsyt"
+                    />
+                <item android:title="@string/lichsu"
+                    android:icon="@drawable/ic_them_his"
+                    android:id="@+id/menu_lichsu"
+                    />
+                <item android:title="@string/tinnhan"
+                    android:icon="@drawable/ic_them_mess"
+                    android:id="@+id/menu_mess"
+                    />
+            </menu>
+
+       </item>
+
+    <item android:title="@string/caidat">
+        <menu>
+            <item android:title="@string/ngonngu"
+                android:icon="@drawable/ic_them_lang"
+                android:id="@+id/menu_ngonngu"
+                />
+            <item android:title="@string/thongbao"
+                android:icon="@drawable/ic_them_noti"
+                />
+            <item android:title="@string/caidatchung"
+                android:icon="@drawable/ic_them_setting"
+                />
+            <item android:title="@string/dangxuat"
+                android:icon="@drawable/ic_logout"
+                android:id="@+id/menu_dangxuat"
+                />
+        </menu>
+    </item>
+
+</menu>

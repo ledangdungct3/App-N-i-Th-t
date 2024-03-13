@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="25dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/foldingcell"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                android:background="@color/xanh"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/inclu_tensp"
+                    android:text="Ten sp: "
+                    android:textSize="26dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/inclu_gia"
+                    android:text="Gia :"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/inclu_uudai"
+                    android:text="Uu Dai :"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/inclu_chatlieu"
+                    android:text="Chat Lieu:"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/inclu_thongtin"
+                    android:text="Thong Tin:"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="200dp"
+                    />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constrainthien"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/donhang_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/noithat2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/donhang_txtphong"
+                    android:text="Đơn hàng 1"
+                    android:textColor="@color/dochu"
+                    android:textSize="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toTopOf="@id/donhang_img"
+                    app:layout_constraintLeft_toLeftOf="@id/donhang_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/donhang_bnt"
+                    style="@style/Theme.AppCompat"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/background_bntcomau"
+                    android:text="Tùy Chọn"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="@id/donhang_img"
+                    app:layout_constraintRight_toRightOf="@id/donhang_img"
+                    app:layout_constraintTop_toTopOf="@id/donhang_img" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.ramotion.foldingcell.FoldingCell>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

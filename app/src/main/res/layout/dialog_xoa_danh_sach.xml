@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:background="@color/hong">
+    <TextView
+        android:id="@+id/txt_ds"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Xóa Danh Sách"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:background="@color/xanh"
+        android:textColor="@color/cam"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <EditText
+        android:id="@+id/xoa_edt"
+        app:layout_constraintTop_toBottomOf="@id/txt_ds"
+        android:background="@drawable/background_edittex"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:hint="Nhập vị trí cần xóa"
+        android:textColorHint="@color/cam"
+        android:padding="16dp"
+        android:layout_height="55dp"/>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/xoa_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bnt_xoa"
+            android:layout_marginEnd="10dp"
+            style="@style/Theme.AppCompat"
+           android:text="Chấp Nhận"
+            android:textColor="@color/cam"
+            android:background="@drawable/background_edittex"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Theme.AppCompat"
+            android:id="@+id/bnt_xoa_can"
+            android:layout_marginStart="10dp"
+            android:text="Thoát"
+            android:textColor="@color/cam"
+            android:background="@drawable/background_edittex"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

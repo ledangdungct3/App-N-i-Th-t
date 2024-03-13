@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/background_cat1">
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/sele2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <TextView
+            android:id="@+id/txt_title"
+            android:text="10% Off"
+            android:textSize="28dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/chu"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_des"
+            android:text="10% Off"
+            android:textSize="20dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/chu"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_getpon"
+            android:text="get ponup"
+            android:textSize="16dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/xanh"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@id/txt_des"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

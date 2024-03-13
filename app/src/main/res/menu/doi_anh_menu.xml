@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/anhdd"
+        android:id="@+id/menu_datnhanh"
+        />
+    <item android:title="@string/anhbia"
+        android:id="@+id/menu_hienthinhanh"
+        android:icon="@drawable/ic_baseline"
+        />
+    <item android:title="@string/chupanh"
+        android:id="@+id/menu_yeuthich"
+        />
+</menu>
